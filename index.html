@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="main.css" />
+		<!-- Used a third party library for color picker -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/@r-tek/colr_pickr@1.2.0/build/colr_pickr.min.css"
+		/>
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@r-tek/colr_pickr@1.2.0/build/colr_pickr.min.js"
+			defer
+		></script>
+		<script src="main.js" defer></script>
+		<title>Drawing</title>
+	</head>
+	<body>
+		<header>Drawing</header>
+		<div class="control-panel">
+			<div id="button-group">
+				<button class="button-selected" id="sm">Small Pen</button>
+				<button id="md">Medium Pen</button>
+				<button id="lg">Large Pen</button>
+				<button id="hl">Highlighter</button>
+				<button id="er">Eraser</button>
+			</div>
+			<div id="color-selection">
+				<div class="color-heading">Select Color</div>
+				<div id="select-color"></div>
+			</div>
+		</div>
+		<canvas></canvas>
+	</body>
+</html>
